@@ -65,43 +65,43 @@ export const generateChords = (
   for (let degree of degrees) {
     switch (degree) {
       case 'i': 
-        chordProgression.push(scaleNotes[0])
+        chordProgression.push(`${scaleNotes[0]}m`)
         break;
       case 'I': 
         chordProgression.push(scaleNotes[0]);      
         break;
       case 'ii':
-        chordProgression.push(scaleNotes[1]);
+        chordProgression.push(`${scaleNotes[1]}m`);
         break;
       case 'II':
         chordProgression.push(scaleNotes[1]);
         break;
       case 'iii': 
-        chordProgression.push(scaleNotes[2])
+        chordProgression.push(`${scaleNotes[2]}m`)
         break;
       case 'III': 
         chordProgression.push(scaleNotes[2]);      
         break;
       case 'iv':
-        chordProgression.push(scaleNotes[3]);
+        chordProgression.push(`${scaleNotes[3]}m`);
         break;
       case 'IV':
         chordProgression.push(scaleNotes[3]);
         break;
       case 'v':
-        chordProgression.push(scaleNotes[4]);
+        chordProgression.push(`${scaleNotes[4]}m`);
         break;
       case 'V':
         chordProgression.push(scaleNotes[4]);
         break;
       case 'vi':
-        chordProgression.push(scaleNotes[5]);
+        chordProgression.push(`${scaleNotes[5]}m`);
         break;
       case 'VI':
         chordProgression.push(scaleNotes[5]);
         break;
       case 'vii':
-        chordProgression.push(scaleNotes[6]);
+        chordProgression.push(`${scaleNotes[6]}m`);
         break;
       case 'VII':
         chordProgression.push(scaleNotes[6]);
