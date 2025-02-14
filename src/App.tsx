@@ -15,6 +15,7 @@ export enum Progression {
   i_II_i_VII = "i II i VII",
   i_iv_v_i = "i iv v i",
   i_iidim7_v_i = "i ii°7 v i",
+  i_bVII_bVI_bVII_i = "i bVII bVI bVII i"
 }
 
 export enum Key {
@@ -124,7 +125,7 @@ const App = () => {
             <MenuItem value={Progression.i_II_i_VII}>{Progression.i_II_i_VII}</MenuItem>
             <MenuItem value={Progression.i_iv_v_i}>{Progression.i_iv_v_i}</MenuItem>
             <MenuItem value={Progression.i_iidim7_v_i}>{Progression.i_iidim7_v_i}</MenuItem>
-
+            <MenuItem value={Progression.i_bVII_bVI_bVII_i}>{Progression.i_bVII_bVI_bVII_i}</MenuItem>
           </Select> 
         )
       }

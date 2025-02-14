@@ -103,11 +103,17 @@ export const generateChords = (
       case 'VI':
         chordProgression.push(scaleNotes[5]);
         break;
+      case 'bVI':
+        chordProgression.push(`${scaleNotes[5]}`);
+        break;
       case 'vii':
         chordProgression.push(`${scaleNotes[6]}m`);
         break;
       case 'VII':
         chordProgression.push(scaleNotes[6]);
+        break;
+      case 'bVII':
+        chordProgression.push(`${scaleNotes[6]}`);
         break;
       default:
         console.error(`Unknown scale degree encountered: ${degree}`)
