@@ -73,6 +73,9 @@ export const generateChords = (
       case 'ii':
         chordProgression.push(`${scaleNotes[1]}m`);
         break;
+      case 'ii°7':
+        chordProgression.push(`${scaleNotes[1]}°7`);
+        break;
       case 'II':
         chordProgression.push(scaleNotes[1]);
         break;
