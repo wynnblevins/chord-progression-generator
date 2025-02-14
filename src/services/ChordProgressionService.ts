@@ -97,6 +97,9 @@ export const generateChords = (
       case 'V':
         chordProgression.push(scaleNotes[4]);
         break;
+      case 'V7':
+        chordProgression.push(`${scaleNotes[4]}7`);
+        break;
       case 'vi':
         chordProgression.push(`${scaleNotes[5]}m`);
         break;

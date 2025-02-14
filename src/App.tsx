@@ -1,21 +1,28 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import './App.css';
 import ChordProgressionDisplay from "./components/ChordProgressionDisplay";
-import { FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, InputLabel, major, MenuItem, Select, SelectChangeEvent, Switch } from "@mui/material";
-import { generateChords } from "./services/ChordProgressionService";
+import { 
+  FormControl, 
+  FormControlLabel, 
+  FormGroup, 
+  MenuItem, 
+  Select, 
+  SelectChangeEvent, 
+  Switch 
+} from "@mui/material";
 
 export enum Progression {
-  i_III_i_VII = "i III i VII",
-  i_II_VI_vii = "i II VI vii",
   I_ii_VI_IV = "I ii VI IV",
   I_IV_V = "I IV V",
   I_vi_IV_V = "I vi IV V",
   I_V_iii_vi = "I V iii vi",
   I_V_vi_IV = "I V vi IV",
-  i_II_i_VII = "i II i VII",
   i_iv_v_i = "i iv v i",
+  i_III_i_VII = "i III i VII",
   i_iidim7_v_i = "i ii°7 v i",
-  i_bVII_bVI_bVII_i = "i bVII bVI bVII i"
+  i_bVI_bIII_bVII = "i bVII bIII bVII",
+  i_bVII_bVI_bVII_i = "i bVII bVI bVII i",
+  i_bVII_bVI_V7 = "i bVII bVI V7"
 }
 
 export enum Key {
@@ -121,11 +128,10 @@ const App = () => {
             onChange={handleProgressionChange}
           >
             <MenuItem value={Progression.i_III_i_VII}>{Progression.i_III_i_VII}</MenuItem>
-            <MenuItem value={Progression.i_II_VI_vii}>{Progression.i_II_VI_vii}</MenuItem>
-            <MenuItem value={Progression.i_II_i_VII}>{Progression.i_II_i_VII}</MenuItem>
             <MenuItem value={Progression.i_iv_v_i}>{Progression.i_iv_v_i}</MenuItem>
             <MenuItem value={Progression.i_iidim7_v_i}>{Progression.i_iidim7_v_i}</MenuItem>
             <MenuItem value={Progression.i_bVII_bVI_bVII_i}>{Progression.i_bVII_bVI_bVII_i}</MenuItem>
+            <MenuItem value={Progression.i_bVII_bVI_V7}>{Progression.i_bVII_bVI_V7}</MenuItem>
           </Select> 
         )
       }
